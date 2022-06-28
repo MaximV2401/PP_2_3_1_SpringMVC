@@ -13,11 +13,11 @@ import web.model.User;
 @RequestMapping("/users")
 public class UsersController {
 
-    private final UserDaoImpl userDaoImpl;
+    private final UserDao userDaoImpl;
 
     @Autowired
-    public UsersController(UserDaoImpl userDao) {
-        this.userDaoImpl = userDao;
+    public UsersController(UserDaoImpl userDaoImpl) {
+        this.userDaoImpl = userDaoImpl;
     }
 
     @GetMapping()
