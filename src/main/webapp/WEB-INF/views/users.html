@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <title>Users</title>
 </head>
+
+
 <body>
+<h1>Users</h1>
+
+
+
+
 <table border="1" cellpadding="5">
     <tr>
         <th>id</th>
@@ -14,16 +21,17 @@
     </tr>
 
     <tr th:each="user : ${list}">
-        <td th:href="@{/{id}(id=${user.getId()})}" >user/td>
-        <td th:utext="${user.getFirstName()}">/td>
+        <td>
+            <a th:href="@{users/{id}(id=${user.getId()})}" th:utext="${user.getId()}"></a>
+        </td>
+        <td th:utext="${user.getFirstName()}"></td>
         <td th:utext="${user.getLastName()}"></td>
         <td th:utext="${user.getEmail()}"></td>
     </tr>
 
 </table>
-<br />
-<hr/>
-<a th:href="/users/new/">Add new user</a>
+
+<a href="/new">Add new user</a>
 
 
 </body>

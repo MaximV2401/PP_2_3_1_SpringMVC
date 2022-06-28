@@ -8,11 +8,11 @@
 
 <form th:method="POST" th:action="@{/users}" th:object="${user}">
     <label for="firstname">Enter firstname: </label>
-    <input type="text" th:field="*{firstname}" id="firstname"/>
+    <input type="text" th:field="*{firstName}" id="firstname"/>
 
     <br/>
     <label for="lastname">Enter lastname: </label>
-    <input type="text" th:field="*{lastname}" id="lastname"/>
+    <input type="text" th:field="*{lastName}" id="lastname"/>
 
     <br/>
     <label for="email">Enter email: </label>
