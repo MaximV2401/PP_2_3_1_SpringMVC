@@ -11,7 +11,7 @@ public interface UserService {
 
     public List<User> listUsers();
     public void add(User user);
-    public User getUser(int id);
-    public void delete(int id);
-    public void update(int id, User user);
+    public User getUser(long id);
+    public void delete(long id);
+    public void update(long id, User user);
 }
