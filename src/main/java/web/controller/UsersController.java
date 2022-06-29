@@ -59,7 +59,7 @@ public class UsersController {
     @DeleteMapping("/{id}")
     public String delete(@PathVariable("id") long id) {
         userServiceImpl.delete(id);
-        return "redirect:/user";
+        return "redirect:/users";
     }
 
 }
